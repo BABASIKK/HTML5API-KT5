@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 API KT5</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>HTML5 API KT5</h1>
+    
+    <!-- FileReader Section -->
+    <section id="file-reader">
+      <h2>Загрузить файлы</h2>
+      <input type="file" id="fileInput" multiple>
+      <div id="fileOutput" class="output"></div>
+    </section>
+    
+    <!-- Drag and Drop Section -->
+    <section id="drag-drop">
+      <h2>Перетаскивание файлов</h2>
+      <div id="dropZone" class="drop-zone">Перетащить файлы</div>
+      <div id="dragOutput" class="output"></div>
+    </section>
+    
+    <!-- Device Interaction Section -->
+    <section id="device-api">
+      <h2>Взаимодействие с устройствами</h2>
+      <button id="getLocation">Получить местоположение</button>
+      <p id="locationOutput">Местоположение: не найдено.</p>
+      <button id="startCamera">Включить камеру</button>
+      <video id="cameraStream" autoplay playsinline></video>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
